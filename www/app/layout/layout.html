@@ -1,0 +1,37 @@
+<ion-side-menus>
+
+	<ion-pane ion-side-menu-content>
+		<ion-nav-bar class="bar-assertive">
+
+		<!-- 	<ion-nav-back-button class="button-clear button-icon icon ion-arrow-left-c">
+			</ion-nav-back-button> -->
+			<ion-nav-buttons><button menu-toggle="left" class="button icon ion-navicon"></button>
+
+			</ion-nav-buttons>
+		
+			
+		</ion-nav-bar>
+		<ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
+	</ion-pane>
+
+	<ion-side-menu side="left">
+		<header class="bar bar-header bar-assertive">
+			<h1 class="title">My Car</h1>
+		</header>
+
+		<ion-content class="has-header">
+			<ion-list>
+				<ion-item nav-clear menu-close ui-sref="app.carList">View Car</ion-item>
+				<ion-item nav-clear menu-close ui-sref="app.updateCar">Update Car</ion-item>
+				<ion-item nav-clear menu-close ui-sref="app.addCar">Add Car</ion-item>
+				<ion-item nav-clear menu-close ui-sref="app.taskList">View Task List</ion-item>
+			</ion-list>
+		</ion-content>
+
+
+
+	</ion-side-menu>
+
+
+
+</ion-side-menus>
